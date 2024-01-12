@@ -95,4 +95,4 @@ TW_DEFAULT_LANGUAGE := zh_CN
 TW_OZIP_DECRYPT_KEY := 0000
 
 # defind version information
-TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d"-beilusm")
+TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d"-"beilusm")
