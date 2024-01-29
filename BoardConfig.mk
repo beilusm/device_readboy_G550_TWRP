@@ -83,7 +83,6 @@ TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
 # MTP 
 TW_MTP_DEVICE := /dev/mtp_usb
 
@@ -91,7 +90,6 @@ TW_MTP_DEVICE := /dev/mtp_usb
 TW_DEFAULT_LANGUAGE := zh_CN
 
 # ozip
-
 TW_OZIP_DECRYPT_KEY := 0000
 
 # defind version information
@@ -100,3 +98,13 @@ TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d"-"by-beilusm")
 #fix touch
 RECOVERY_TOUCHSCREEN_FLIP_X := true
 RECOVERY_TOUCHSCREEN_FLIP_Y := true
+
+# exFAT FS Support
+TW_INCLUDE_FUSE_EXFAT := true
+
+# NTFS Support
+TW_INCLUDE_FUSE_NTFS := true
+
+# Logs
+TARGET_USES_LOGD := true
+TWRP_INCLUDE_LOGCAT := true
