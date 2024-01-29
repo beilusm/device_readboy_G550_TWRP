@@ -108,3 +108,6 @@ TW_INCLUDE_FUSE_NTFS := true
 # Logs
 TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
+
+#mount sdcard
+RECOVERY_SDCARD_ON_DATA := true
